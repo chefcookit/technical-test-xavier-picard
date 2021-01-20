@@ -1,6 +1,7 @@
 # schema.graphql
 type Query {
     getLunchBoxByOwner(firstName: String, lastName: String): [LunchBox]
+    getPersonByPartFirstname(partFirstname: String!): [Person]
 }
 
 type Mutation {
