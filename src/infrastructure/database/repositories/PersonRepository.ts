@@ -17,9 +17,10 @@ export default class PersonRepository implements IPersonRepository {
     return data.find((p) => p.firstName === first && p.lastName === last) ?? null;
   }
 
-  async getPersonByPartFirstname(partFirstname: string): Promise<Person[]> {
+  async getPersonsByPartFirstName(research: Object): Promise<Person[]> {
+    const partFirstName = research["partFirstName"];
     return data.filter((person: Person) => 
-      (person.firstName).includes(partFirstname)
+      person.firstName.toLowerCase().includes(partFirstName)
     );
   }
 }

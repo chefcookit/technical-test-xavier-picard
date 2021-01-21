@@ -6,7 +6,7 @@ import CreateLunchBox from '../../interfaces/graphql/operations/CreateLunchBox';
 const resolvers: IResolvers = {
   Query: {
     getLunchBoxByOwner: GetLunchBox,
-    getPersonByPartFirstname: GetPerson
+    getPersonByPartFirstName: GetPerson
   },
   Mutation: {
     createLunchBox: CreateLunchBox,
