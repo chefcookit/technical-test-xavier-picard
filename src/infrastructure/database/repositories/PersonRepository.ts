@@ -23,4 +23,8 @@ export default class PersonRepository implements IPersonRepository {
       person.firstName.toLowerCase().includes(partFirstName)
     );
   }
+
+  async addPerson(person: Person): Promise<void> {
+    data.push(person);
+  }
 }

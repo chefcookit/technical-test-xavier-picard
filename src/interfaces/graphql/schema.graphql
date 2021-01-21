@@ -6,6 +6,7 @@ type Query {
 
 type Mutation {
     createLunchBox(owner: PersonInput!, items: [String]!): Boolean
+    createPerson(person: PersonInput): Boolean
 }
 
 input PersonInput {
