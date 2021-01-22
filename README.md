@@ -124,7 +124,12 @@ name (e.g. Searching for `arn` should match `Arnold`).
 Build a UML data diagram for the best way to model this data.\
 You can modify the current data structure.
 
- > insert your uml diagram(s) here
+ > ![UML (/doc/UML.jpg)](/doc/UML.jpg?raw=true)
+
+
+ > ![ERD (/doc/ERD.jpg)](/doc/ERD.jpg?raw=true)
+ 
+ 
 
 ## Submission
 To submit this test you must create a pull request with your code/answers by the deadline
@@ -256,7 +261,11 @@ ingrédient qui se trouve dans chaque item de la boite lunch. Construisez un mod
 d'une manière optimale.\
 Vous pouvez changer le modèle de données présentement utilisé dans le projet.
 
- > insérez vos diagramme(s) uml ici
+
+ > ![UML (/doc/UML.jpg)](/doc/UML.jpg?raw=true)
+
+
+ > ![ERD (/doc/ERD.jpg)](/doc/ERD.jpg?raw=true)
 
 ## Soumission
 Pour soumettre vos réponses à ce test, créez une Pull Request avant l'echéance.
