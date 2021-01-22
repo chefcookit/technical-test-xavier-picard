@@ -10,12 +10,12 @@ export default class GetPersonQuery implements IGetPersonQuery {
     this.personRepository = params.personRepository;
   }
 
-  async execute(partFirstName: string): Promise<Person[]> {
+  async execute(research: string): Promise<Person[]> {
 
-    const persons = await this.personRepository.getPersonsByPartFirstName(partFirstName);
+    const persons = await this.personRepository.getPersonsByPartFirstName(research);
 
     if (persons.length < 1)
-      throw new PersonNotFoundError(`Person with ${partFirstName} in its name is not found.`);
+      throw new PersonNotFoundError(`Person with '${research["partFirstName"]}' in its name is not found.`);
 
     return persons;
   }
